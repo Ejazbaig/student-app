@@ -1,0 +1,28 @@
+.admin-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .admin-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .logout-button {
+    background-color: #ff4d4f;
+    color: white;
+    border: none;
+    font-weight: bold;
+    padding: 5px 15px;
+    border-radius: 5px;
+    text-transform: none;
+  }
+  
+  .logout-button:hover {
+    background-color: #d9363e;
+    color: white;
+  }
+  
