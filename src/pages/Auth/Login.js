@@ -20,7 +20,6 @@ const Login = () => {
       );
 
       if (user) {
-        // Store the user data in localStorage upon successful login
         localStorage.setItem("currentUser", JSON.stringify(user));
         setSnackbar({ open: true, message: "Login successful!", severity: "success" });
 
@@ -59,7 +58,6 @@ const Login = () => {
       ))}
       <CustomButton type="submit">Login</CustomButton>
 
-      {/* Snackbar for success or error message */}
       <Snackbar open={snackbar.open} autoHideDuration={3000} onClose={handleSnackbarClose}>
         <Alert onClose={handleSnackbarClose} severity={snackbar.severity} variant="filled">
           {snackbar.message}
